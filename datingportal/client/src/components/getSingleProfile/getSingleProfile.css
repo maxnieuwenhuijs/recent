@@ -1,0 +1,7 @@
+.carousel .slider-wrapper.axis-vertical {
+    height: 400px !important;
+}
+
+.carousel-root {
+    outline: 1px solid #e8e8e8;
+}

@@ -1,0 +1,41 @@
+.valid {
+    background-color: #e5f1e6;
+}
+
+.valid:before {
+    content: "\2713 ";
+    position: absolute;
+    font-size: 22px;
+    color: green;
+    top: 0px;
+    left: 5px;
+}
+
+.loading {
+    background-color: #efefef;
+}
+
+.loading:before {
+    position: absolute;
+    font-size: 22px;
+    top: 0px;
+    left: 5px;
+}
+
+.loader {
+    display: none;
+    width: 100px !important;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0.5;
+}
+
+.loading > .loader {
+    display: block;
+}
+
+.valid > .loader {
+    display: none;
+}

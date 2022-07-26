@@ -1,0 +1,12 @@
+.dzu-dropzone {
+    overflow: inherit;
+    border: 3px dashed #ffc5c1;
+    margin: 10px;
+    left: -20px;
+}
+
+.dzu-inputLabel {
+    font-family: inherit;
+    color: #ffc5c1;
+    font-weight: normal;
+}

@@ -1,0 +1,60 @@
+.Navbar {
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #33a9ef;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 999999;
+    border-bottom: 5px solid #009ea5;
+}
+
+.Navbar a {
+    text-decoration: none;
+}
+
+.Logo {
+    width: 200px;
+}
+
+.Logout {
+    background-color: #717171;
+    border-radius: 25px;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.Logout a {
+    box-sizing: border-box;
+    color: white
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+}
+
+.rightContainer .Link {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:1100px) {
+    .Navbar {
+        padding: 0 5px;
+    }
+    .Logo {
+        max-width: 130px;
+    }
+}

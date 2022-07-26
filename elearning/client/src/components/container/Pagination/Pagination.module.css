@@ -1,0 +1,38 @@
+.Pagination {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.Pagination ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 5px;
+    justify-content: center;
+
+}
+
+.Pagination li {
+    margin: 10px 5px;
+}
+
+.Pagination li a {
+    cursor: pointer;
+    font-size: 18px;
+    background: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .Pagination ul {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: auto;
+    }
+}

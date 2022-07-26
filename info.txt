@@ -1,0 +1,10 @@
+Frontend and Backend made with Javascrip (ReactJS and NodeJS). I operated on my own, and I wrote every line of the source files.
+
+Uploaded parts of the source files to indicate my understanding of JS. 
+
+Both the dating / elearning portals are designed in a way to support multiple domains pointing to the server, so the same content can quickly be rebranded.
+
+I'm aware it is sometimes not the perfect solution for some challenges,
+but my last employer wanted things to deploy rather quick and dirty than correct and well thought out.
+
+I'm now learning and following courses on C# and Typescript to further develop my programming skills. (C# because I want to make a mobile game and Typescript because that is required in bigger companies to structure the JS code)

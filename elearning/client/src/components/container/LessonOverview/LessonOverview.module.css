@@ -1,0 +1,275 @@
+.Wrapper {
+  margin-top: 75px;
+}
+
+.sideBar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 25%;
+  top: 75px;
+  z-index: 99;
+  color: #fff;
+  border-left: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.Back {
+  color: white;
+  position: fixed;
+  z-index: 99999999;
+  top: 75px;
+  background: #777;
+  padding: 3px 15px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.Back:hover {
+  opacity: 1;
+}
+
+.sideBar h2 {
+  margin: 0;
+  padding: 15px 5px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.Checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px;
+  vertical-align: middle;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 15px;
+  cursor: pointer;
+}
+
+.MovieSection {
+  width: 75%;
+}
+
+.MoviePlayer {
+  background-color: #fff;
+  height: 77vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.subTitle h1 {
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.eBook {
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #eee;
+  border-bottom: 0px;
+  transition: 0.2s;
+  margin: 0 15px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.eBook:hover {
+  box-shadow: inset 0 0 5px #86a0bb;
+}
+
+.eBookImage {
+  max-width: 75px;
+  display: block;
+  margin: auto;
+}
+
+.pdf {
+  max-width: 24px;
+  vertical-align: bottom;
+}
+
+.eBook a {
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+.eBook a span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.eBook a:hover {
+  color: #0283ff;
+}
+
+.CourseContent {
+  text-align: center;
+  color: #fff;
+  background-color: #002144;
+}
+
+.Banner {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+
+.LessonList {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  padding-bottom: 75px;
+}
+
+.LessonList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.LessonList::-webkit-scrollbar {
+  width: 6px;
+  background-color: #fff;
+}
+
+.LessonList::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #93a3ce;
+}
+
+.LessonContainer {
+  background: #ffffff;
+  border-top: 1px solid #eee
+}
+
+.LessonContainer li {
+  padding: 30px 15px;
+  box-sizing: border-box;
+  color: #333;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  display: flex;
+  align-items: center;
+}
+
+.LessonContainer li:hover {
+  background-color: #f3f3f3;
+}
+
+.LessonContainer li span {
+  max-width: 100%;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #002144;
+}
+
+.LessonContainer li span:hover {
+  color: #0052a1;
+}
+
+.CourseDescription {
+  background: #fff;
+  width: 100%;
+  padding: 25px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+
+.List {
+  margin-right: 50px;
+}
+
+.List ul {
+  border-left: 1px solid #eee;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.List li {
+  margin: 5px auto;
+}
+
+.List h3 {
+  background: whitesmoke;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 2px;
+}
+
+.Product {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ProductSummary {
+  width: 70%;
+}
+
+@media screen and (max-width:1100px) {
+  .sideBar {
+    width: 75%;
+  }
+  .MovieSection {
+    width: 100%;
+  }
+  .Product {
+    flex-direction: column;
+  }
+  .List {
+    order: 2
+  }
+  .CourseDescription {
+    padding: 10px 25px;
+  }
+  .subTitle h1 {
+    font-size: 1.3em;
+  }
+  .ProductSummary {
+    width: 100%;
+  }
+  .eBook {
+    margin: 0 5px;
+  }
+  .Back {
+    font-size: 14px;
+  }
+}

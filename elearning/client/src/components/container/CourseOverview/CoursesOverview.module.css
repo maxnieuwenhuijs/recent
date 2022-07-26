@@ -1,0 +1,55 @@
+.Overview {
+    display: flex;
+    flex-direction: row;
+    height: calc(92vh - 75px);
+    overflow: hidden;
+}
+
+.Checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+    vertical-align: middle;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.Categories {
+    min-width: 220px;
+    /* border-right: 1px solid #e6e6e6; */
+    height: calc(100vh - 75px);
+    background: #053870;
+    color: #fff;
+    position: relative;
+}
+
+.Categories h3 {
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.Categories ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Categories ul div {
+    display: flex;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+.Categories ul li {
+    color: #fff;
+}
+
+input[type="checkbox" i] {
+    background-color: red;
+}
+
+
+@media screen and (max-width:1100px) {}

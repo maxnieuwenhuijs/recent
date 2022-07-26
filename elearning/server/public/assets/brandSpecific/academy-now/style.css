@@ -1,0 +1,25 @@
+#primary {
+    background-color: #f93822 !important;
+    color: #fff !important;
+}
+
+#CategoriesBar {
+    background: #f93822 !important;
+}
+
+#secondary {
+    background-color: #e52e19 !important;
+    border-color: #e52e19 !important;
+}
+
+#secondary-text {
+    color: #000000 !important;
+}
+
+#secondary-border {
+    border-color: #e52e19 !important;
+}
+
+.progress-bar {
+    background-color: #5c83ad !important;
+}

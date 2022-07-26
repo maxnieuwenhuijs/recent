@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  margin-top: 75px;
+}
+
+p, li, a, span {
+  color: #656565;
+}
+
+li.active {
+  background-color: #f7f7f7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Logo {
+  max-width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #5c83ad;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.active {
+  color: #268dff !important;
+  font-weight: 800;
+}
+
+.Active a {
+  color: #fff;
+  background-color: #275eca !important;
+}
+
+#CategoriesBar {
+  position: relative;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+#SideBar {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+#Categories-Menu, #Lesson-Menu {
+  display: none;
+  position: absolute;
+  z-index: 99999;
+}
+
+#Categories-Menu img, #Lesson-Menu img {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#Lesson-Menu, #Categories-Menu {
+  position: fixed;
+  font-size: 15px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  top: 50%;
+}
+
+#Lesson-Menu {
+  right: 0px
+}
+
+#Categories-Menu {
+  left: 0px;
+}
+
+#Lesson-Menu span {
+  padding: 20px 10px;
+  margin-top: 5px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 0 3px #7b7b7b;
+}
+
+#Categories-Menu span {
+  padding: 20px 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 0 3px #7b7b7b;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 48%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+/* MOBILE */
+
+@media screen and (max-width:1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  #CategoriesBar {
+    position: fixed;
+    z-index: 9999;
+    left: -300px;
+  }
+  #SideBar {
+    position: fixed;
+    z-index: 9999;
+    right: -1200px;
+  }
+  .slideInLeft {
+    right: 0 !important;
+  }
+  .slideInRight {
+    left: 0 !important;
+  }
+  #Categories-Menu, #Lesson-Menu {
+    display: block;
+  }
+  #Lesson-Menu {
+    right: 0;
+  }
+  .LessonCross {
+    top: 80px;
+  }
+}
